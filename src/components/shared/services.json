@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_services",
+  "info": {
+    "displayName": "Services"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "stats": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
