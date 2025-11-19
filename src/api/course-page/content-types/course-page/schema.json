@@ -10,5 +10,26 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "CourseHero": {
+      "type": "component",
+      "component": "shared.course-hero",
+      "repeatable": false
+    },
+    "WhyChoose": {
+      "type": "component",
+      "component": "shared.why-choose",
+      "repeatable": false
+    },
+    "CourseDescription": {
+      "type": "component",
+      "component": "shared.course-description",
+      "repeatable": false
+    },
+    "ratings": {
+      "type": "component",
+      "component": "shared.ratings",
+      "repeatable": false
+    }
+  }
 }

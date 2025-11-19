@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_ratings",
+  "info": {
+    "displayName": "ratings"
+  },
+  "options": {},
+  "attributes": {
+    "ratings": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

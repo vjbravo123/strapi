@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_why_chooses",
+  "info": {
+    "displayName": "WhyChoose"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Subheading": {
+      "type": "string"
+    },
+    "Card": {
+      "type": "component",
+      "component": "shared.card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

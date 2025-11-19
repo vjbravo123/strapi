@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_price_components",
+  "info": {
+    "displayName": "PriceComponent"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "string"
+    },
+    "originalPrice": {
+      "type": "string"
+    },
+    "text1": {
+      "type": "string"
+    },
+    "text2": {
+      "type": "string"
+    },
+    "text3": {
+      "type": "string"
+    },
+    "text4": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

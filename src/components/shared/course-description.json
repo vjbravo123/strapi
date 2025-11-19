@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_course_descriptions",
+  "info": {
+    "displayName": "CourseDescription"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "descriptionList": {
+      "type": "json"
+    },
+    "Resources": {
+      "type": "component",
+      "component": "shared.resources",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

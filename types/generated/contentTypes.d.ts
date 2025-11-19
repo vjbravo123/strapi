@@ -611,6 +611,11 @@ export interface ApiCoursePageCoursePage extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    CourseDescription: Schema.Attribute.Component<
+      'shared.course-description',
+      false
+    >;
+    CourseHero: Schema.Attribute.Component<'shared.course-hero', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -621,9 +626,11 @@ export interface ApiCoursePageCoursePage extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    ratings: Schema.Attribute.Component<'shared.ratings', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    WhyChoose: Schema.Attribute.Component<'shared.why-choose', false>;
   };
 }
 

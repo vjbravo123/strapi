@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_resources",
+  "info": {
+    "displayName": "Resources"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "ResourceList": {
+      "type": "json"
+    },
+    "text1": {
+      "type": "string"
+    },
+    "text2": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

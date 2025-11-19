@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_course_heroes",
+  "info": {
+    "displayName": "CourseHero"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Subheading": {
+      "type": "string"
+    },
+    "buttons": {
+      "type": "component",
+      "component": "shared.buttons",
+      "repeatable": true
+    },
+    "src": {
+      "type": "string"
+    },
+    "PriceComponent": {
+      "type": "component",
+      "component": "shared.price-component",
+      "repeatable": false
+    },
+    "Outcomes": {
+      "type": "json"
+    },
+    "CourseDetails": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}
