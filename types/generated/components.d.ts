@@ -59,6 +59,79 @@ export interface SharedCourseHero extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCoursePriceSection extends Struct.ComponentSchema {
+  collectionName: 'components_shared_course_price_sections';
+  info: {
+    displayName: 'CoursePriceSection';
+  };
+  attributes: {
+    CTA2: Schema.Attribute.Component<'shared.cta-2', false>;
+    originalPrice: Schema.Attribute.String;
+    price: Schema.Attribute.String;
+  };
+}
+
+export interface SharedCta1 extends Struct.ComponentSchema {
+  collectionName: 'components_shared_cta_1s';
+  info: {
+    displayName: 'CTA1';
+  };
+  attributes: {
+    ButtonLink: Schema.Attribute.String;
+    ButtonName: Schema.Attribute.String;
+  };
+}
+
+export interface SharedCta2 extends Struct.ComponentSchema {
+  collectionName: 'components_shared_cta_2s';
+  info: {
+    displayName: 'CTA2';
+  };
+  attributes: {
+    ButtonLink: Schema.Attribute.String;
+    ButtonText: Schema.Attribute.String;
+  };
+}
+
+export interface SharedCta3 extends Struct.ComponentSchema {
+  collectionName: 'components_shared_cta_3s';
+  info: {
+    displayName: 'CTA3';
+  };
+  attributes: {
+    ButtonLink: Schema.Attribute.String;
+    ButtonText: Schema.Attribute.String;
+  };
+}
+
+export interface SharedHeroSection extends Struct.ComponentSchema {
+  collectionName: 'components_shared_hero_sections';
+  info: {
+    displayName: 'HeroSection';
+  };
+  attributes: {
+    CTA1: Schema.Attribute.Component<'shared.cta-1', false>;
+    DayOneText: Schema.Attribute.String;
+    DayTwoText: Schema.Attribute.String;
+    Heading: Schema.Attribute.String;
+    smallHeading: Schema.Attribute.String;
+  };
+}
+
+export interface SharedInstructorsSection extends Struct.ComponentSchema {
+  collectionName: 'components_shared_instructors_sections';
+  info: {
+    displayName: 'InstructorsSection';
+  };
+  attributes: {
+    bio: Schema.Attribute.String;
+    companyLogo: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+    position: Schema.Attribute.String;
+    ProfilePic: Schema.Attribute.String;
+  };
+}
+
 export interface SharedMedia extends Struct.ComponentSchema {
   collectionName: 'components_shared_media';
   info: {
@@ -215,6 +288,12 @@ declare module '@strapi/strapi' {
       'shared.course-description': SharedCourseDescription;
       'shared.course-details': SharedCourseDetails;
       'shared.course-hero': SharedCourseHero;
+      'shared.course-price-section': SharedCoursePriceSection;
+      'shared.cta-1': SharedCta1;
+      'shared.cta-2': SharedCta2;
+      'shared.cta-3': SharedCta3;
+      'shared.hero-section': SharedHeroSection;
+      'shared.instructors-section': SharedInstructorsSection;
       'shared.media': SharedMedia;
       'shared.price-component': SharedPriceComponent;
       'shared.quote': SharedQuote;

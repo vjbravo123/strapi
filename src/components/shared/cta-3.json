@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_cta_3s",
+  "info": {
+    "displayName": "CTA3"
+  },
+  "options": {},
+  "attributes": {
+    "ButtonLink": {
+      "type": "string"
+    },
+    "ButtonText": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "webinars",
+  "info": {
+    "singularName": "webinar",
+    "pluralName": "webinars",
+    "displayName": "Webinar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroSection": {
+      "type": "component",
+      "component": "shared.hero-section",
+      "repeatable": false
+    },
+    "InstructorsSection": {
+      "type": "component",
+      "component": "shared.instructors-section",
+      "repeatable": false
+    },
+    "CoursePriceSection": {
+      "type": "component",
+      "component": "shared.course-price-section",
+      "repeatable": false
+    },
+    "CTA3": {
+      "type": "component",
+      "component": "shared.cta-3",
+      "repeatable": false
+    }
+  }
+}

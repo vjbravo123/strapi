@@ -799,6 +799,43 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiWebinarWebinar extends Struct.CollectionTypeSchema {
+  collectionName: 'webinars';
+  info: {
+    displayName: 'Webinar';
+    pluralName: 'webinars';
+    singularName: 'webinar';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    CoursePriceSection: Schema.Attribute.Component<
+      'shared.course-price-section',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    CTA3: Schema.Attribute.Component<'shared.cta-3', false>;
+    HeroSection: Schema.Attribute.Component<'shared.hero-section', false>;
+    InstructorsSection: Schema.Attribute.Component<
+      'shared.instructors-section',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::webinar.webinar'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1320,6 +1357,7 @@ declare module '@strapi/strapi' {
       'api::product.product': ApiProductProduct;
       'api::service.service': ApiServiceService;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
+      'api::webinar.webinar': ApiWebinarWebinar;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_hero_sections",
+  "info": {
+    "displayName": "HeroSection"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "smallHeading": {
+      "type": "string"
+    },
+    "CTA1": {
+      "type": "component",
+      "component": "shared.cta-1",
+      "repeatable": false
+    },
+    "DayOneText": {
+      "type": "string"
+    },
+    "DayTwoText": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

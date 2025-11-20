@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_instructors_sections",
+  "info": {
+    "displayName": "InstructorsSection"
+  },
+  "options": {},
+  "attributes": {
+    "ProfilePic": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "companyLogo": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_course_price_sections",
+  "info": {
+    "displayName": "CoursePriceSection"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "string"
+    },
+    "originalPrice": {
+      "type": "string"
+    },
+    "CTA2": {
+      "type": "component",
+      "component": "shared.cta-2",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
