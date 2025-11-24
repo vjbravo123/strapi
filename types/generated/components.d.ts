@@ -180,6 +180,16 @@ export interface SharedRatings extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedReadytoStartSection extends Struct.ComponentSchema {
+  collectionName: 'components_shared_readyto_start_sections';
+  info: {
+    displayName: 'ReadytoStartSection';
+  };
+  attributes: {
+    CTA3: Schema.Attribute.Component<'shared.cta-3', true>;
+  };
+}
+
 export interface SharedResources extends Struct.ComponentSchema {
   collectionName: 'components_shared_resources';
   info: {
@@ -298,6 +308,7 @@ declare module '@strapi/strapi' {
       'shared.price-component': SharedPriceComponent;
       'shared.quote': SharedQuote;
       'shared.ratings': SharedRatings;
+      'shared.readyto-start-section': SharedReadytoStartSection;
       'shared.resources': SharedResources;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;

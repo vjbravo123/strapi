@@ -26,7 +26,12 @@
       "component": "shared.course-price-section",
       "repeatable": false
     },
-    "CTA3": {
+    "ReadytoStartSection": {
+      "type": "component",
+      "component": "shared.readyto-start-section",
+      "repeatable": false
+    },
+    "CTA4": {
       "type": "component",
       "component": "shared.cta-3",
       "repeatable": false

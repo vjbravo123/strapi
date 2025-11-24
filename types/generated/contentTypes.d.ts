@@ -817,7 +817,7 @@ export interface ApiWebinarWebinar extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    CTA3: Schema.Attribute.Component<'shared.cta-3', false>;
+    CTA4: Schema.Attribute.Component<'shared.cta-3', false>;
     HeroSection: Schema.Attribute.Component<'shared.hero-section', false>;
     InstructorsSection: Schema.Attribute.Component<
       'shared.instructors-section',
@@ -830,6 +830,10 @@ export interface ApiWebinarWebinar extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    ReadytoStartSection: Schema.Attribute.Component<
+      'shared.readyto-start-section',
+      false
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

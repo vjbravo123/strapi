@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_readyto_start_sections",
+  "info": {
+    "displayName": "ReadytoStartSection"
+  },
+  "options": {},
+  "attributes": {
+    "CTA3": {
+      "type": "component",
+      "component": "shared.cta-3",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
